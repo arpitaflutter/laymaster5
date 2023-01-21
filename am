@@ -1,0 +1,257 @@
+import 'package:flutter/material.dart';
+
+void main()
+{
+  runApp(
+    MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Home(),
+    ),
+  );
+}
+
+class Home extends StatefulWidget {
+  const Home({Key? key}) : super(key: key);
+
+  @override
+  State<Home> createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.black,
+          leading: Icon(Icons.arrow_back,color: Colors.white),
+          title: Text("Pay",style: TextStyle(color: Colors.white)),
+          actions: [
+            Icon(Icons.search_rounded,color: Colors.white,),
+            SizedBox(width: 20,),
+            Icon(Icons.menu,color: Colors.white,),
+            SizedBox(width: 15,),
+          ],
+        ),
+        body: Column(
+          children: [
+            SizedBox(height: 15,),
+            Center(child: Text("Pay Your Bills",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)),
+            SizedBox(height: 5,),
+            Row(
+              children: [
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Expanded(
+                      child: Container(
+                        height: 100,width: 100,
+                        decoration: BoxDecoration(
+                          color: Colors.grey.shade300,
+                          borderRadius: BorderRadius.circular(5),
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            SizedBox(height: 5,),
+                            Icon(Icons.electric_bolt,color: Colors.blue.shade900),
+                            Text("ELECTRICITY"),
+                            SizedBox(height: 5,),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Container(
+                      height: 100,width: 100,
+                      decoration: BoxDecoration(
+                        color: Colors.grey.shade300,
+                        borderRadius: BorderRadius.circular(5),
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          SizedBox(height: 5,),
+                          Icon(Icons.water_drop,color: Colors.blue.shade900),
+                          Text("WATER"),
+                          SizedBox(height: 5,),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Container(
+                      height: 100,width: 100,
+                      decoration: BoxDecoration(
+                        color: Colors.grey.shade300,
+                        borderRadius: BorderRadius.circular(5),
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          SizedBox(height: 5,),
+                          Icon(Icons.mobile_screen_share_sharp,color: Colors.blue.shade900),
+                          Text("MOBILE"),
+                          SizedBox(height: 5,),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(width: 5,),
+            Row(
+              children: [
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Expanded(
+                      child: Container(
+                        height: 100,width: 100,
+                        decoration: BoxDecoration(
+                          color: Colors.grey.shade300,
+                          borderRadius: BorderRadius.circular(5),
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            SizedBox(height: 5,),
+                            Icon(Icons.call,color: Colors.blue.shade900),
+                            Text("LANDLINE"),
+                            SizedBox(height: 5,),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Container(
+                      height: 100,width: 100,
+                      decoration: BoxDecoration(
+                        color: Colors.grey.shade300,
+                        borderRadius: BorderRadius.circular(5),
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          SizedBox(height: 5,),
+                          Icon(Icons.tv,color: Colors.blue.shade900),
+                          Text("CABLE TV"),
+                          SizedBox(height: 5,),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Container(
+                      height: 100,width: 100,
+                      decoration: BoxDecoration(
+                        color: Colors.grey.shade300,
+                        borderRadius: BorderRadius.circular(5),
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          SizedBox(height: 5,),
+                          Icon(Icons.network_check_outlined,color: Colors.blue.shade900),
+                          Text("INTERNET"),
+                          SizedBox(height: 5,),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(height: 5,),
+            Text("Purchase Tickets",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+            SizedBox(height: 5,),
+            Row(
+              children: [
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Expanded(
+                      child: Container(
+                        height: 100,width: 100,
+                        decoration: BoxDecoration(
+                          color: Colors.grey.shade300,
+                          borderRadius: BorderRadius.circular(5),
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            SizedBox(height: 5,),
+                            Icon(Icons.local_movies_outlined,color: Colors.blue.shade900),
+                            Text("MOVIE"),
+                            SizedBox(height: 5,),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Container(
+                      height: 100,width: 100,
+                      decoration: BoxDecoration(
+                        color: Colors.grey.shade300,
+                        borderRadius: BorderRadius.circular(5),
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          SizedBox(height: 5,),
+                          Icon(Icons.calendar_month,color: Colors.blue.shade900),
+                          Text("EVENT"),
+                          SizedBox(height: 5,),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Container(
+                      height: 100,width: 100,
+                      decoration: BoxDecoration(
+                        color: Colors.grey.shade300,
+                        borderRadius: BorderRadius.circular(5),
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          SizedBox(height: 5,),
+                          Icon(Icons.sports_football,color: Colors.blue.shade900),
+                          Text("SPORT"),
+                          SizedBox(height: 5,),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
